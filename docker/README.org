@@ -1,0 +1,8 @@
+* Things to consider
+  - [ ] Package reproducibility
+    + python:3.9-slim was selected because it is compatible with librosa
+    + Should we provide a complete list of package versions? (both unix/docker and python)?
+  - [ ] Can we build the docker image from the Anonymous Github?
+    + I think, it is not possible because of the git-lfs dependency
+    + Thus, the solution is to provide only the prebuilt image?
+  - [ ] Can we use the Algorave10 flyer in the article? Attribution? (it looks nice:)
