@@ -1,14 +1,15 @@
 # ICLC 2023 -- Algorave 10 information retrieval
-- Two options: 
-  * a) Built docker image
-  * b) Run the prebuilt
+- Two options:
+  * a) Run the prebuilt (recommended)
+  * b) Built docker image
 
-## a) Built the docker image
-The video files can be retrieved using git for large files (`git-lfs`) from here: (https://github.com/gewhere/algorave10-large-files)[https://github.com/gewhere/algorave10-large-files]
+NOTE: A separate repo hosts the video files, and depends on git for large files (`git-lfs`): [https://github.com/gewhere/algorave10-large-files](https://github.com/gewhere/algorave10-large-files). No need to install `git-lfs` to run the docker images shown below.
 
-- Go to: `./docker`
-- Execute: `./build.sh 2>log.txt`
-- Execute: `./run.sh`
+## a) Run the prebuilt from docker-hub (recommended)
 
-## b) Run the prebuilt from docker-hub
 
+## b) Built the docker image
+
+- Go to: `cd docker`
+- Step 1: `./build.sh 2>log.txt`
+- Step 2: `./run.sh`

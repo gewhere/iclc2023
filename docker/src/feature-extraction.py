@@ -44,26 +44,26 @@ for i in range(0, len(onlyfiles)):
     oenv = librosa.onset.onset_strength(y=y, sr=sr, hop_length=hop_length)
     tempo = librosa.beat.tempo(onset_envelope=oenv, sr=sr)
     pulse = librosa.beat.plp(onset_envelope=oenv, sr=sr)
-    # # SPECTRAL FEEATURES
-    # mfcc = librosa.feature.mfcc(y=y, sr=sr)
-    # centroid = librosa.feature.spectral_centroid(y=y, sr=sr)
-    # rolloff = librosa.feature.spectral_rolloff(y=y, sr=sr, roll_percent=0.95)
-    # flatness = librosa.feature.spectral_flatness(y=y)
-    # spec_bw = librosa.feature.spectral_bandwidth(y=y, sr=sr)
-    # contrast = librosa.feature.spectral_contrast(y=y, sr=sr)
-    # pitch = librosa.pyin(y, fmin=65, fmax=2093)  # CPU EXPENSIVE !!
+    # SPECTRAL FEEATURES
+    mfcc = librosa.feature.mfcc(y=y, sr=sr)
+    centroid = librosa.feature.spectral_centroid(y=y, sr=sr)
+    rolloff = librosa.feature.spectral_rolloff(y=y, sr=sr, roll_percent=0.95)
+    flatness = librosa.feature.spectral_flatness(y=y)
+    spec_bw = librosa.feature.spectral_bandwidth(y=y, sr=sr)
+    contrast = librosa.feature.spectral_contrast(y=y, sr=sr)
+    pitch = librosa.pyin(y, fmin=65, fmax=2093)  # CPU EXPENSIVE !!
     # dict
     data[timetag] = [
         ("oenv", oenv),
         ("tempo", tempo),
         ("pulse", pulse),
-        # ("mfcc", mfcc),
-        # ("centroid", centroid),
-        # ("rolloff", rolloff),
-        # ("flatness", flatness),
-        # ("spec_bw", spec_bw),
-        # ("contrast", contrast),
-        # ("pitch", pitch),
+        ("mfcc", mfcc),
+        ("centroid", centroid),
+        ("rolloff", rolloff),
+        ("flatness", flatness),
+        ("spec_bw", spec_bw),
+        ("contrast", contrast),
+        ("pitch", pitch),
     ]
 
 
