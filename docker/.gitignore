@@ -1,4 +1,7 @@
 .DS_Store
 /notebooks/.ipynb_checkpoints/*.py
 /notebooks/.ipynb_checkpoints/*.ipynb
+/notebooks/.ipynb_checkpoints
 /img/*
+/img/.ipynb_checkpoints
+**/.*
