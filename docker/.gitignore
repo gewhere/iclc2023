@@ -5,3 +5,7 @@
 /img/*
 /img/.ipynb_checkpoints
 **/.*
+./src/.DS_Store
+./img/.DS_Store
+./notebooks/.DS_Store
+
