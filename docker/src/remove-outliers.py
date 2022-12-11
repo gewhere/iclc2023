@@ -2,7 +2,6 @@ import numpy as np
 import pickle
 import os
 
-# data_pwd = '/Users/geodia/submissions/ISMIR2022/docker/data/'
 data_fn = "algorave10-feature-extraction.pkl"
 pwd_root = ""
 data_pwd = "/data"
@@ -14,7 +13,6 @@ print('data_pwd:', os.getcwd())  #
 with open(data_fn, "rb") as handle:
     d = pickle.load(handle)
 
-# data_pwd = "/Users/geodia/submissions/ISMIR2022/docker/data/"
 with open("performances.pkl", "rb") as handle:
     performances = pickle.load(handle)
 

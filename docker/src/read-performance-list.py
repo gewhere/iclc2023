@@ -2,7 +2,6 @@ import os
 import pickle
 
 fn = "algorave10-performance-list.org"
-# pwd_root = '/Users/geodia/submissions/ISMIR2022/docker'
 pwd_root = ""
 
 print(os.getcwd())  # print working dir

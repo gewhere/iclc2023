@@ -12,7 +12,7 @@ print('========== FEATURE EXTRACTION SCRIPT ==========')
 print('===============================================')
 t = time.time()
 
-mypath = "/data/algorave10-large-files/mp3"  # '/Users/geodia/data/algorave/algorave10/mp3' # <path of mp3 files>
+mypath = "/data/algorave10-large-files/mp3"
 onlyfiles = [f for f in listdir(mypath) if (isfile(join(mypath, f)) and "mp3" in f)]
 
 pattern = "([0-9]{2}\-[A-Za-z]{3}\-[2]{2}\-[0-9]{2}\-[0-9]{2})"
@@ -68,7 +68,6 @@ for i in range(0, len(onlyfiles)):
 
 
 print(os.getcwd())  # print working dir
-# os.chdir("/Users/geodia/submissions/ISMIR2022/docker/data")
 os.chdir("/data")
 print(os.getcwd())  # print working dir
 
