@@ -29,10 +29,11 @@ To **run the notebook** copy and paste in your browser the last URL (which start
 _NOTE_: If you cannot access the notebook, make sure the port `8888` is in _not_ used by another python notebook, or another application.
 
 ## b) Built the docker image
+This option can take up to several hours.
 
 - Clone this repository: `git clone https://github.com/gewhere/iclc2023.git`
 - Go to: `cd iclc2023/docker`
-- Step 1: `./build.sh 2>log.txt`
+- Step 1: `./build.sh` (or save to file `./build.sh >log.txt`)
 - Step 2: `./run.sh`
 
 # License
