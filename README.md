@@ -34,3 +34,7 @@ _NOTE_: If you cannot access the notebook, make sure the port `8888` is in _not_
 - Go to: `cd iclc2023/docker`
 - Step 1: `./build.sh 2>log.txt`
 - Step 2: `./run.sh`
+
+# License
+
+The CC license [BY-NC-SA-4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) is inherited to this repository from [TOPLAP's webpage on the Internet Archive](https://archive.org/details/toplap).
